@@ -1,0 +1,23 @@
+menu "Configuracao da Estufa"
+
+    config PINO_DHT
+        int "Pino do DHT11"
+        default 15
+
+    config CANAL_LDR
+        int "Canal do ADC do LDR (canal 0 = GPIO1)"
+        default 0
+
+    config PINO_SAIDA
+        int "Pino da saida (LED que faz papel do aquecedor)"
+        default 14
+
+    config SETPOINT_PADRAO
+        int "Setpoint inicial (graus)"
+        default 28
+
+    config INTERVALO_LOG
+        int "Intervalo do log (segundos)"
+        default 10
+
+endmenu
